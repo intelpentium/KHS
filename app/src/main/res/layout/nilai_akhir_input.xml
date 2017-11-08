@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Nilai Akhir"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginRight="5dip">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Jumlah Tugas :"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/jml_tugas"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="0"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textStyle="bold" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginRight="5dip">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Nilai Pembagi :"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/nilai_pembagi_tugas"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textStyle="bold"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Nilai Pembagi :"/>-->
+
+            <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/nilai_pembagi_tugas"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@color/colorAccent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:hint="Nilai Pembagi"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="16sp" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Rata Tugas :"/>
+
+            <TextView
+                android:id="@+id/rata_tugas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorhint" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginRight="5dip">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Jumlah Ulangan :"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/jml_ulangan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="0"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textStyle="bold" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginRight="5dip">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Nilai Pembagi :"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/nilai_pembagi_ulangan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textStyle="bold"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Nilai Pembagi :"/>-->
+
+            <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/nilai_pembagi_ulangan"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@color/colorAccent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:hint="Nilai Pembagi"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:inputType="number"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="16sp" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Rata Ulangan :"/>
+
+            <TextView
+                android:id="@+id/rata_ulangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorhint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Ujian Tengah Semester :"/>
+
+            <TextView
+                android:id="@+id/nilai_uts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Ujian Akhir Semester :"/>
+
+            <TextView
+                android:id="@+id/nilai_uas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorhint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colortext"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Nilai Akhir :"/>
+
+            <TextView
+                android:id="@+id/nilai_akhir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/simpanBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect2"
+            android:layout_margin="20dp"
+            android:text="Simpan"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

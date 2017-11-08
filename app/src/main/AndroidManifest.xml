@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="project.bundamulia.sd">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_khs"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NoAppTheme">
+        <activity android:name="project.bundamulia.sd.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="project.bundamulia.sd.Guru.LoginGuru"/>
+        <activity android:name="project.bundamulia.sd.Guru.Agenda" android:label="Agenda"/>
+        <activity android:name="project.bundamulia.sd.Guru.HomeGuru" android:label="Home Guru"/>
+        <activity android:name="project.bundamulia.sd.Guru.ListSiswa.ListSiswa" android:label="Daftar Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.ListSiswa.ListSiswaInput" android:label="Tambah Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.ListSiswa.ListSiswaEdit" android:label="Edit Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.ListSiswa.ListSiswaKelas" android:label="Kelas Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.Nilai" android:label="Menu Guru"/>
+
+        <activity android:name="project.bundamulia.sd.Guru.Tugas.Tugas" android:label="Nilai"/>
+        <activity android:name="project.bundamulia.sd.Guru.Tugas.TugasList" android:label="Daftar Kelas"/>
+        <activity android:name="project.bundamulia.sd.Guru.Tugas.TugasSiswa" android:label="Daftar Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.Tugas.TugasInput" android:label="Input Tugas"/>
+        <activity android:name="project.bundamulia.sd.Guru.Tugas.TugasEdit" android:label="Edit Tugas"/>
+
+        <activity android:name="project.bundamulia.sd.Guru.Ulangan.Ulangan" android:label="Nilai"/>
+        <activity android:name="project.bundamulia.sd.Guru.Ulangan.UlanganList" android:label="Daftar Kelas"/>
+        <activity android:name="project.bundamulia.sd.Guru.Ulangan.UlanganSiswa" android:label="Daftar Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.Ulangan.UlanganInput" android:label="Input Ulangan"/>
+        <activity android:name="project.bundamulia.sd.Guru.Ulangan.UlanganEdit" android:label="Edit Ulangan"/>
+
+        <activity android:name="project.bundamulia.sd.Guru.Uts.Uts" android:label="Nilai"/>
+        <activity android:name="project.bundamulia.sd.Guru.Uts.UtsList" android:label="Daftar Kelas"/>
+        <activity android:name="project.bundamulia.sd.Guru.Uts.UtsSiswa" android:label="Daftar Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.Uts.UtsInput" android:label="Input UTS"/>
+        <activity android:name="project.bundamulia.sd.Guru.Uts.UtsEdit" android:label="Edit UTS"/>
+
+        <activity android:name="project.bundamulia.sd.Guru.Uas.Uas" android:label="Nilai"/>
+        <activity android:name="project.bundamulia.sd.Guru.Uas.UasList" android:label="Daftar Kelas"/>
+        <activity android:name="project.bundamulia.sd.Guru.Uas.UasSiswa" android:label="Daftar Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.Uas.UasInput" android:label="Input UAS"/>
+        <activity android:name="project.bundamulia.sd.Guru.Uas.UasEdit" android:label="Edit UAS"/>
+
+        <activity android:name="project.bundamulia.sd.Guru.NilaiAkhir.NilaiAkhir" android:label="Nilai"/>
+        <activity android:name="project.bundamulia.sd.Guru.NilaiAkhir.NilaiAkhirList" android:label="Daftar Kelas"/>
+        <activity android:name="project.bundamulia.sd.Guru.NilaiAkhir.NilaiAkhirSiswa" android:label="Daftar Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.NilaiAkhir.NilaiAkhirInput" android:label="Input Nilai Akhir"/>
+        <activity android:name="project.bundamulia.sd.Guru.NilaiAkhir.NilaiAkhirEdit" android:label="Edit Nilai Akhir"/>
+
+        <activity android:name="project.bundamulia.sd.Guru.Penilaian" android:label="Penilaian"/>
+        <activity android:name="project.bundamulia.sd.Guru.Absen.Absen" android:label="Presensi"/>
+        <activity android:name="project.bundamulia.sd.Guru.Absen.AbsenList" android:label="Daftar Kelas"/>
+        <activity android:name="project.bundamulia.sd.Guru.Absen.AbsenSiswa" android:label="Daftar Siswa"/>
+
+        <activity android:name="project.bundamulia.sd.Guru.Sikap.Sikap" android:label="Penilaian"/>
+        <activity android:name="project.bundamulia.sd.Guru.Sikap.SikapList" android:label="Daftar Kelas"/>
+        <activity android:name="project.bundamulia.sd.Guru.Sikap.SikapSiswa" android:label="Daftar Siswa"/>
+        <activity android:name="project.bundamulia.sd.Guru.Sikap.SikapInput" android:label="Input Penilaian Sikap"/>
+        <activity android:name="project.bundamulia.sd.Guru.Sikap.SikapEdit" android:label="Edit Penilaian Sikap"/>
+
+        <activity android:name="project.bundamulia.sd.Ortu.LoginOrtu"/>
+        <activity android:name="project.bundamulia.sd.Ortu.HomeOrtu"/>
+        <activity android:name="project.bundamulia.sd.Ortu.Grafik"/>
+        <activity android:name="project.bundamulia.sd.Ortu.GrafikView"/>
+        <activity android:name="project.bundamulia.sd.Ortu.Raport" android:label="Rapor"/>
+        <activity android:name="project.bundamulia.sd.Ortu.RaportDetail" android:label="Nilai Rapor"/>
+        <activity android:name="project.bundamulia.sd.Ortu.AgendaOrtu" android:label="Agenda"/>
+
+    </application>
+
+</manifest>

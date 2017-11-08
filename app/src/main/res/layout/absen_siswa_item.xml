@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- TextView for displaying question-->
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+    <!-- RadioGroup for grouping of RadioButton-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textColor="#000"
+            android:buttonTint="@color/colortext"
+            android:text="Masuk" />
+
+        <RadioButton
+            android:id="@+id/izin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:buttonTint="@color/colortext"
+            android:text="Izin" />
+
+        <RadioButton
+            android:id="@+id/sakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:buttonTint="@color/colortext"
+            android:text="Sakit" />
+
+        <RadioButton
+            android:id="@+id/absen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Absen"
+            android:textColor="#000"
+            android:buttonTint="@color/colortext"/>
+    </RadioGroup>
+</LinearLayout>

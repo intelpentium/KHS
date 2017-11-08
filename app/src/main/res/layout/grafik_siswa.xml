@@ -1,0 +1,27 @@
+<!--<HorizontalScrollView-->
+    <!--android:id="@+id/hsv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:fillViewport="true"-->
+    <!--android:measureAllChildren="false"-->
+    <!--android:scrollbars="none"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+<!--</HorizontalScrollView>-->

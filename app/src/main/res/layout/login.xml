@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#fff">-->
+
+
+<LinearLayout android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/logo_khs"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="50dp"
+        android:paddingTop="30dp"
+        android:text="Pilihan Login Anda"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp">
+
+            <Button
+                android:id="@+id/parents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="Orang tua"
+                android:textColor="#fff"
+                android:background="@drawable/rect"
+                android:padding="10dp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="Guru"
+                android:textColor="#fff"
+                android:background="@drawable/rect2"
+                android:padding="10dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--</RelativeLayout>-->
+
+
+
